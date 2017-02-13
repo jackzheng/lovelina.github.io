@@ -63,7 +63,7 @@
         .add(/#why/, final)
 	    .add(/#yours/, yours)
 	    .add(/#together/, together)
-	    .add(/#rose/, rose1)
+	    .add(/#rose/, rose)
         .load();
 
 	function show(func, n){
@@ -72,7 +72,7 @@
 			if (func !== undefined) {
 				func();
 				L.FX.fadeIn(document.getElementById('results'), {
-					duration: 3000, complete: function () {
+					duration: 4000, complete: function () {
 					}
 				});
 			}
@@ -83,7 +83,7 @@
 	}
 
 	var p = new L.Promise();
-	show(undefined, 3000).then(
+	show(undefined, 4000).then(
 		function() {
 			return show(rise, 0)
 		}
@@ -101,7 +101,7 @@
 		}
 	).then(
 		function() {
-			return show(rose, 3000)
+			return show(rose, 4000)
 		}
 	).then(
 		function() {
