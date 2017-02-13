@@ -63,7 +63,7 @@
         .add(/#why/, final)
 	    .add(/#yours/, yours)
 	    .add(/#together/, together)
-	    .add(/#rose/, rose)
+	    .add(/#rose/, rose1)
         .load();
 
 	function show(func, n){
