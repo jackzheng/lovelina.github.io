@@ -101,7 +101,7 @@
 		}
 	).then(
 		function() {
-			return show(rose, 3000)
+			return show(rose, 4000)
 		}
 	).then(
 		function() {
