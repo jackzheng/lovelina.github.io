@@ -4,8 +4,11 @@
     
     <title>老婆情人节快乐</title>
     <link href="main.css" rel="stylesheet" type="text/css">
-    <meta name="google-site-verification" content="3-n5j67nVlQ0ICC3DJb28FXuJI7pEei5v2kx7AR8eHU">
-    <script async="" src="analytics.js"></script><script src="lettuce.js"></script>
+    <script type="text/javascript" src="./images/jquery.js"></script>
+	
+    <script type="text/javascript" src="./images/functions_dev.js?v=2"></script>
+   
+    </script><script src="lettuce.js"></script>
     <script src="app.js"></script>
 <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
 .en-markup-crop-options {
@@ -20,20 +23,48 @@
 .en-markup-crop-options div div:first-of-type {
     margin-left: 0px !important;
 }
-</style></head>
+</style>
+<style type="text/css">
+	#words {display:none;position: absolute;top:30%;left:25%;color:#fff;font-size:30px;}
+	#elapseClock {margin:10px 0;}
+	.digit {font-size:42px;}
+	
+</style>
+</head>
 <body>
 <div id="results" style="opacity: 1;">
 	<div class="home"><h1 class="typing">一直期盼你的出现..........</h1></div>
 </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<div id="words">
+		<div id="messages">
+			亲爱的老婆, 我们在一起已经
+			<div id="elapseClock"></div>
+		</div>
+		<div id="loveu">
+			Love u forever and ever.<br/>
+			<div class="signature">- 郑永挺</div>
+		</div>
+</div>
 
-  ga('create', 'UA-58938908-1', 'auto');
-  ga('send', 'pageview');
+<script>
+	var displayMode = 1;
+		var together = new Date();
+		together.setFullYear(2013, 9, 30);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		
+		
+		
+			timeElapse(together, displayMode);
+			setInterval(function () {
+				timeElapse(together, displayMode);
+			}, 500);
+
+  
 
 </script>
 

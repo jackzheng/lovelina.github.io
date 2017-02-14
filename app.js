@@ -48,6 +48,7 @@
     function final() {
 	    document.getElementById("results").innerHTML = '<canvas width="1440" height="740"></canvas>';
 	    L.Event.trigger("showLove")
+	    document.getElementById("words").style.display = 'block';
     }
 
 	L.Event.on("showLove", showLove);
